@@ -1,7 +1,7 @@
 [Prometheus / The Linux Foundation INTRO101 / Основи Kubernetes](https://apps.prometheus.org.ua/learning/course/course-v1:LinuxFoundation+INTRO101+2023_T1/home)
 
 <p align="center">
-  <img src="./.img/Minikube_logo.png">
+  <img src="./.img/Minikube_logo.png" style="height: 100px;"/>
 </p>
 
 **Minikube** – це один із найпростіших, найгнучкіших та найпопулярніших методів запуску «все-в-одному» або кількома робочими нодами локального кластера Kubernetes, ізольованого віртуальними машинами (ВМ) або контейнерами безпосередньо на робочих станціях.   
