@@ -23,7 +23,7 @@
 - [How To Use minikube for Local Kubernetes Development and Testing](https://www.digitalocean.com/community/tutorials/how-to-use-minikube-for-local-kubernetes-development-and-testing)
 
 
-### :warning: :warning:
+### :warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:
 ```console
 Failed to connect to ubuntu.com meta-release-lts
 
