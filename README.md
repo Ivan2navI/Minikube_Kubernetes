@@ -24,10 +24,12 @@
 
 
 ### :warning: :warning:
+```console
 Failed to connect to ubuntu.com meta-release-lts
 
-Иногда после входа в систему появляется сообщение Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+# Иногда после входа в систему появляется сообщение Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
 
-Чтобы убрать это сообщение, выполните команду
+# Чтобы убрать это сообщение, выполните команду
 
 sudo truncate -s 0 /var/lib/ubuntu-release-upgrader/release-upgrade-available
+```
