@@ -9,7 +9,8 @@
 Встановлення Minikube на Ubuntu Linux 20.04 LTS з VirtualBox v7.0.   
 Це інсталювання передбачає, що на нашій робочій станції Linux не встановлено жодного іншого програмного забезпечення для ізоляції, зокрема драйверів KVM2, QEMU, Docker Engine або Podman.  
 
-Перевірте підтримку віртуалізації у вашій ОС Linux у терміналі (непорожній вивід вказує на підтримку віртуалізації) ( [Check virtualization support](https://minikube.sigs.k8s.io/docs/drivers/kvm2/#check-virtualization-support) )
+Перевірте підтримку віртуалізації у вашій ОС Linux у терміналі (непорожній вивід вказує на підтримку віртуалізації)  
+([Check virtualization support](https://minikube.sigs.k8s.io/docs/drivers/kvm2/#check-virtualization-support) )
 ------------------------------------------------------------------------------------------------------------
 
 To use VM drivers, verify that your system has virtualization support enabled:
@@ -19,7 +20,25 @@ egrep -q 'vmx|svm' /proc/cpuinfo && echo yes || echo no
 If the above command outputs "no":
 
 -   If you are running within a VM, your hypervisor does not allow nested virtualization. You will need to use the *None (bare-metal)* driver
--   If you are running on a physical machine, ensure that your BIOS has hardware virtualization enabled
+-   If you are running on a physical machine, ensure that your BIOS has hardware virtualization enabled  
+
+
+:warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:
+**Для процессоров Intel вложенная виртуализация недоступна из графического интерфейса программы, но ее можно включить с помощью командной строки.**
+:warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:  
+
+**Как включить вложенную виртуализацию Nested VT-x VirtualBox в системах в Microsoft Windows**
+Вложенная виртуализация включается отдельно для каждой виртуальной системы.  
+Открываем Командую строку (cmd.exe) от имени Администратора и выполняем следующие команды.  
+Переходим в директорию установленной программы в Program Files:  
+```cd C:\Program Files\Oracle\VirtualBox```  
+  
+Выводим список виртуальных систем с помощью команды:  
+```VBoxManage.exe list vms``
+  
+Выбрав точное название виртуальной системы, подключаем вложенную виртуализацию:  
+```VBoxManage.exe modifyvm "название виртуальной системы" --nested-hw-virt on```
+  
 
 ### 1.1. VirtualBox
 Найпростіший спосіб завантажити і встановити гіпервізор VirtualBox для Linux – з його офіційного сайту. Однак, якщо хочеться пригод, можна додати рекомендований репозиторій вихідного коду для хостової ОС, завантажити і зареєструвати відкритий ключ, оновити і встановити його безпосередньо в терміналі: 
