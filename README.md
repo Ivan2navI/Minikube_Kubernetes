@@ -5,11 +5,11 @@
 # [Minikube](https://minikube.sigs.k8s.io/docs/start/) 
 – minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows.
 
-## 1. Інсталяція Minikube на Linux
-Встановлення Minikube на Ubuntu Linux 20.04 LTS з VirtualBox v7.0.   
-Це інсталювання передбачає, що на нашій робочій станції Linux не встановлено жодного іншого програмного забезпечення для ізоляції, зокрема драйверів KVM2, QEMU, Docker Engine або Podman.  
+## 1. Установка Minikube на Linux
+Установка Minikube на Ubuntu Linux 20.04 LTS с использованием VirtualBox v7.0.
+Эта установка предполагает, что на нашей рабочей станции Linux не установлено никакого другого программного обеспечения для изоляции, включая драйверы KVM2, QEMU, Docker Engine или Podman.
 
-Перевірте підтримку віртуалізації у вашій ОС Linux у терміналі (непорожній вивід вказує на підтримку віртуалізації)  
+Проверьте поддержку виртуализации в вашей ОС Linux в терминале. 
 ([Check virtualization support](https://minikube.sigs.k8s.io/docs/drivers/kvm2/#check-virtualization-support) )
 ------------------------------------------------------------------------------------------------------------
 
@@ -41,7 +41,7 @@ If the above command outputs "no":
   
 
 ### 1.1. VirtualBox
-Найпростіший спосіб завантажити і встановити гіпервізор VirtualBox для Linux – з його офіційного сайту. Однак, якщо хочеться пригод, можна додати рекомендований репозиторій вихідного коду для хостової ОС, завантажити і зареєструвати відкритий ключ, оновити і встановити його безпосередньо в терміналі: 
+Самый простой способ загрузить и установить гипервизор VirtualBox для Linux - это с его официального сайта. Однако, если вы хотите поэкспериментировать, можно добавить рекомендуемый репозиторий исходного кода для хостовой ОС, загрузить и зарегистрировать открытый ключ, а затем обновить и установить его непосредственно в терминале.
 ```console
 # Install VirtualBox 7.0 on Ubuntu Server 20.04
 # 1. Install system updates
@@ -101,16 +101,16 @@ echo "vhost_net" | sudo tee -a /etc/modules
 ```
 
 ### 1.3. Minikube
-Minikube можна завантажити і встановити в терміналі, остання версія або конкретний реліз доступні на сторінці релізів Minikube:
+Minikube можно загрузить и установить в терминале. Последняя версия или конкретный релиз доступны на странице релизов Minikube.  
 ```console
 $ curl -LO \
   https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 
 $ sudo dpkg -i minikube_latest_amd64.deb
 ```
-
+  
 **Запуск Minikube.**
-Ви можете запустити Minikube у терміналі за допомогою команди **minikube start**, яка завантажить однонодовий кластер з останнім стабільним релізом Kubernetes. Для конкретного релізу Kubernetes можна використати параметр **--kubernetes-version**, наприклад, **minikube start --kubernetes-version v1.25.1** (де **latest** є значенням за замовчуванням, і **stable** також є прийнятним).
+Вы можете запустить Minikube в терминале с помощью команды minikube start, которая загрузит одноконечный кластер с последней стабильной версией Kubernetes. Для определенной версии Kubernetes можно использовать параметр --kubernetes-version, например, minikube start --kubernetes-version v1.25.1 (где latest является значением по умолчанию, а stable также является допустимым значением).
 
 **(VirtualBox)**
 ```console
