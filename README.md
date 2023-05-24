@@ -23,18 +23,20 @@ If the above command outputs "no":
 -   If you are running on a physical machine, ensure that your BIOS has hardware virtualization enabled  
 
 
-:warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:
-**Для процессоров Intel вложенная виртуализация недоступна из графического интерфейса программы, но ее можно включить с помощью командной строки.**
+:warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:  
+**Для процессоров Intel вложенная виртуализация недоступна   
+из графического интерфейса программы, но ее можно включить   
+с помощью командной строки.**
 :warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:  
 
-**Как включить вложенную виртуализацию Nested VT-x VirtualBox в системах в Microsoft Windows**
+**Как включить вложенную виртуализацию Nested VT-x VirtualBox в системах в Microsoft Windows**  
 Вложенная виртуализация включается отдельно для каждой виртуальной системы.  
 Открываем Командую строку (cmd.exe) от имени Администратора и выполняем следующие команды.  
 Переходим в директорию установленной программы в Program Files:  
 ```cd C:\Program Files\Oracle\VirtualBox```  
   
 Выводим список виртуальных систем с помощью команды:  
-```VBoxManage.exe list vms``
+```VBoxManage.exe list vms```
   
 Выбрав точное название виртуальной системы, подключаем вложенную виртуализацию:  
 ```VBoxManage.exe modifyvm "название виртуальной системы" --nested-hw-virt on```
