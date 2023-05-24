@@ -16,17 +16,6 @@
 
 
 
-
-Failed to connect to ubuntu.com meta-release-lts
-
-Иногда после входа в систему появляется сообщение Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
-
-Чтобы убрать это сообщение, выполните команду
-
-sudo truncate -s 0 /var/lib/ubuntu-release-upgrader/release-upgrade-available
-
-
-
 ### LINKS:
 - [Установка Kubernetes с помощью Minikube](https://kubernetes.io/ru/docs/setup/learning-environment/minikube/)
 - [Prometheus / The Linux Foundation INTRO101 / Основи Kubernetes](https://apps.prometheus.org.ua/learning/course/course-v1:LinuxFoundation+INTRO101+2023_T1/home)
@@ -34,3 +23,11 @@ sudo truncate -s 0 /var/lib/ubuntu-release-upgrader/release-upgrade-available
 - [How To Use minikube for Local Kubernetes Development and Testing](https://www.digitalocean.com/community/tutorials/how-to-use-minikube-for-local-kubernetes-development-and-testing)
 
 
+### :warning: :warning:
+Failed to connect to ubuntu.com meta-release-lts
+
+Иногда после входа в систему появляется сообщение Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Чтобы убрать это сообщение, выполните команду
+
+sudo truncate -s 0 /var/lib/ubuntu-release-upgrader/release-upgrade-available
