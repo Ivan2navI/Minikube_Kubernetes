@@ -22,12 +22,11 @@ If the above command outputs "no":
 -   If you are running within a VM, your hypervisor does not allow nested virtualization. You will need to use the *None (bare-metal)* driver
 -   If you are running on a physical machine, ensure that your BIOS has hardware virtualization enabled  
 
-
-:warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:  
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️  
 **Для процессоров Intel вложенная виртуализация недоступна   
 из графического интерфейса программы, но ее можно включить   
-с помощью командной строки.**
-:warning: :warning: :warning: :warning: :warning: :warning: :warning: :warning:  
+с помощью командной строки.**  
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️  
 
 **Как включить вложенную виртуализацию Nested VT-x VirtualBox в системах в Microsoft Windows**  
 Вложенная виртуализация включается отдельно для каждой виртуальной системы.  
