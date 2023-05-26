@@ -110,13 +110,13 @@ sudo snap install kubectl --classic
 
 Minikube можно загрузить и установить в терминале. Последняя версия или конкретный релиз доступны на странице релизов Minikube.  
 ```console
-#To download the Minikube DEB package from the official website of Minikube as follows:  
+# To download the Minikube DEB package from the official website of Minikube as follows:  
 wget -O /tmp/minikube_latest.deb https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 
-#To install Minikube from the DEB package file minikube_latest.deb, run the following command:
+# To install Minikube from the DEB package file minikube_latest.deb, run the following command:
 sudo apt install /tmp/minikube_latest.deb
 
-#To check whether Minikube is installed, run the following command:  
+# To check whether Minikube is installed, run the following command:  
 minikube version
 ```
   
