@@ -59,7 +59,7 @@ If hardware virtualization is enabled, you will see the text AMD-V (For AMD proc
 ```VBoxManage.exe list vms```  
   
 Выбрав точное название виртуальной системы, подключаем вложенную виртуализацию:  
-```VBoxManage.exe modifyvm "название виртуальной системы" --nested-hw-virt on```
+```VBoxManage.exe modifyvm "название виртуальной системы" --nested-hw-virt on```  
 ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️    
 
 ### 1.1. VirtualBox
@@ -126,7 +126,6 @@ minikube version
 **(VirtualBox)**  
 ```console
 $ minikube start --driver=virtualbox
-
     * minikube v1.30.1 on Ubuntu 22.04
     * Using the virtualbox driver based on user configuration
     * Downloading VM boot image ...
@@ -148,7 +147,6 @@ $ minikube start --driver=virtualbox
     * Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 
 $ minikube status
-
     minikube
     type: Control Plane
     host: Running
@@ -173,7 +171,13 @@ $ minikube profile list
 | minikube | virtualbox | docker  | 192.168.59.100 | 8443 | v1.26.3 | Running |     1 | *      |
 |----------|------------|---------|----------------|------|---------|---------|-------|--------|
 ```
-Эта таблица содержит столбцы, связанные со стандартными свойствами, такими как имя профиля: minikube, драйвер изоляции: VirtualBox, контейнерная среда выполнения: Docker, версия Kubernetes: v1.25.3, состояние кластера - запущено или остановлено. Таблица также предоставляет количество узлов: по умолчанию 1, приватный IP-адрес виртуальной машины управления кластером minikube VirtualBox и защищенный порт, через который API-сервер открыт для компонентов, агентов и клиентов панели управления кластером: 8443.  
+Эта таблица содержит столбцы, связанные со стандартными свойствами, такими как 
+- имя профиля: minikube, 
+- драйвер изоляции: VirtualBox, 
+- контейнерная среда выполнения: Docker, 
+- версия Kubernetes: v1.25.3, 
+- состояние кластера - запущено или остановлено.   
+Таблица также предоставляет количество узлов: по умолчанию 1, приватный IP-адрес виртуальной машины управления кластером minikube VirtualBox и защищенный порт, через который API-сервер открыт для компонентов, агентов и клиентов панели управления кластером: 8443.  
 
 
 
